@@ -1,4 +1,4 @@
-export * from './Home'
+export * from './Pasos'
 export * from './Ingredientes'
 export * from './Recetas'
 export * from './Descripcion'

@@ -12,12 +12,12 @@ export const Ingredientes = () => {
 
   return (
     <div>
-      <h2>{recipe?.name}</h2>
+      <h2 className="text-center text-4xl font-bold" >{recipe?.name}</h2>
       
-      <h3>Ingredientes</h3>
-      <ul>
+      <h3 className="text-center text-4xl font-bold">Ingredientes</h3>
+      <ul className='w-screen h-screen text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'>
         {recipe?.ingredients.map((ingredient, index) => (
-          <li key={index}>
+          <li className='w-0% px-15 py-8 border-b border-gray-200 rounded-t-lg dark:border-gray-600' key={index}>
             {ingredient} - {recipe?.measures[index]}
           </li>
         ))}
@@ -25,3 +25,4 @@ export const Ingredientes = () => {
     </div>
   );
 };
+
