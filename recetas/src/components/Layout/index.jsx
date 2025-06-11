@@ -4,7 +4,7 @@ import Menu from '../Menu';
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex h-screen w-screen bg-slate-100">
+    <div className="flex h-screen w-screen bg-purple-400">
       <div className="w-20">
         <Ingredients  />
       </div>

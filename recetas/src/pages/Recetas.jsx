@@ -20,16 +20,17 @@ export const Recetas = () => {
   return (
     <div>
       <form onSubmit={handleSearch}>
-        <input type="text" name="ingredient" placeholder="Nombre del ingrediente" />
+        <input type="text" name="ingredient" placeholder="Nombre del ingrediente"/>
         <button type="submit">Buscar</button>
       </form>
 
-      <div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4"> 
         {recipes && recipes?.length > 0 ? (
           recipes?.map((recipe) => (
-            <div key={recipe.id}>
-              <a href={`/Descripcion/${recipe.id}`}>{recipe.name}</a>
-              <img src={recipe.image} alt={recipe.name} />
+            <div className='flex flex-col items-center' key={recipe.id}>
+              <a className="mt-2 text-center font-bold"
+              href={`/Descripcion/${recipe.id}`}>{recipe.name}</a>
+              <img src={recipe.image} alt={recipe.name} className="w-48 h-48 object-cover rounded shadow"/>
             </div>
           ))
         ) : (

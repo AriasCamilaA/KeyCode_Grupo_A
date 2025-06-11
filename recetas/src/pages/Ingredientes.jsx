@@ -11,17 +11,18 @@ export const Ingredientes = () => {
   if (!recipe) return <p>No se encontró ninguna receta</p>;
 
   return (
-    <div>
-      <h2 className="text-center text-4xl font-bold" >{recipe?.name}</h2>
-      
-      <h3 className="text-center text-4xl font-bold">Ingredientes</h3>
-      <ul className='w-screen h-screen text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white'>
+    <div className="flex flex-col flex-grow overflow-auto p-4">
+      <h2 className="text-center text-4xl font-bold mb-4">{recipe?.name}</h2>
+      <div className='bg-amber-100 p-6 rounded-lg shadow-lg'>
+      <h3 className="text-xl font-semibold mb-2">Ingredientes</h3>
+      <ul className='ist-disc list-inside space-y-3 text-gray-900'>
         {recipe?.ingredients.map((ingredient, index) => (
-          <li className='w-0% px-15 py-8 border-b border-gray-200 rounded-t-lg dark:border-gray-600' key={index}>
-            {ingredient} - {recipe?.measures[index]}
+          <li key={index} className="pl-1">
+            {ingredient}       --------------------        {recipe.measures[index]}
           </li>
-        ))}
+            ))}
       </ul>
+      </div>
     </div>
   );
 };

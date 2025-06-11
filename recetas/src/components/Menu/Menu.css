@@ -4,28 +4,28 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  border: 1px solid var(--pastel-teal);
+  border: 1px solid rgb(172, 70, 130);
   transition: all 0.3s;
-  color: var(--pastel-dark);
+  color: rgb(116, 26, 78);
 }
 
 .nav-link-active {
-  color: var(--pastel-teal);
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  background-color: var(--pastel-light);
+  background-color: rgb(231, 71, 170);
 }
 
 .nav-link-inactive {
-  color: var(--pastel-gray);
+  color:  rgb(172, 70, 138);
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   color: var(--pastel-teal);
-}
+} */
 
-.nav-link-disabled {
+/* .nav-link-disabled {
   color: var(--pastel-teal); 
   border: 1px solid var(--pastel-teal); 
   cursor: not-allowed; 
   pointer-events: none;
-}
+} */

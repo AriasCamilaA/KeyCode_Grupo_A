@@ -5,7 +5,7 @@
 :root {
     --pastel-blue: #b0e0e6; /* Azul pastel */
     --pastel-teal: #a8d8ea; /* Verde azulado pastel */
-    --pastel-light: #e0f7fa; /* Azul claro pastel */
+    --pastel-light: #40e3f8; /* Azul claro pastel */
     --pastel-dark: #607d8b; /* Gris oscuro pastel */
   }
 
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 .bg_pastel-blue{
-  background-color: var(--pastel-blue);
+  background-color: rgb(255, 137, 137);
 }
 .bg_pastel-teal{
   background-color: var(--pastel-teal);
